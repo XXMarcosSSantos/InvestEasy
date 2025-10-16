@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
+        // tela principal e calculo feito
         val edtaporte = findViewById<EditText>(R.id.edtText_Aporte)
         val edtNumMeses= findViewById<EditText>(R.id.edtText_NumMeses)
         val edtJuros = findViewById<EditText>(R.id.edtText_Juros)
