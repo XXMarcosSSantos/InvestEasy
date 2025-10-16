@@ -1,6 +1,6 @@
 
 ## Sobre
-Este aplicativo foi criado com o objetivo de praticar o desenvolvimento de listas em Android utilizando RecyclerView. Ele permite que o usuário personalize a maneira como visualiza os contatos, alternando entre diferentes layouts de exibição, como lista ou grade. Além disso, o aplicativo oferece a funcionalidade de compartilhar contatos de forma rápida e intuitiva.
+um app nativo em Kotlin para calcular o rendimento de investimentos com base em juros mensais, ajudando o usuário a visualizar o crescimento do seu capital ao longo do tempo. 💰📈
 
 ## Screenshots
 <img width="260" height="2555" alt="Screenshot_20251016_135515" src="https://github.com/user-attachments/assets/603c08b2-8040-471e-a24d-99929f7f45e8" />
@@ -10,8 +10,7 @@ Este aplicativo foi criado com o objetivo de praticar o desenvolvimento de lista
 ## Techs
 - Kotlin
 - ConstraintLayout
-- Recyclerview
-- ListAdapter
-- Layout Manager: Grid and Linear
-- DiffUtils
-- Explicit intent
+- TextView
+- EditText
+- Button
+
