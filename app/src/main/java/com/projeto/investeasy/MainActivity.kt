@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+
         val edtaporte = findViewById<EditText>(R.id.edtText_Aporte)
         val edtNumMeses= findViewById<EditText>(R.id.edtText_NumMeses)
         val edtJuros = findViewById<EditText>(R.id.edtText_Juros)
