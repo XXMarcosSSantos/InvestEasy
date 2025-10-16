@@ -51,15 +51,14 @@ class MainActivity : AppCompatActivity() {
             val juros = edtJuros.text.toString().toDouble()
 
             val jurosMensal = juros / 100
-            val montanteFinal = aporte * ((1 + jurosMensal).pow(NumMeses) - 1) / jurosMensal
+
+            val ResultadoFinal = aporte * ((1 + jurosMensal).pow( NumMeses) - 1) / jurosMensal
             val totalInvestido = aporte * NumMeses
-            val VR_Rendimeto = montanteFinal - totalInvestido
+            val VR_Rendimeto = ResultadoFinal - totalInvestido
 
-            tvInvestimento.text = totalInvestido.toString()
+            tvInvestimento.text = ResultadoFinal.toString()
             tvResult_Rendimento.text = VR_Rendimeto.toString()
-
         }
-
 
     }
 }

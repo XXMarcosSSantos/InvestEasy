@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- mudando cores -->
+    <color name="colorPrimary">#4CAF50</color> <!-- verde principal -->
+    <color name="colorAccent">#81C784</color>
+    <color name="backgroundColor">#121212</color> <!-- fundo escuro -->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#B0BEC5</color>
 </resources>
