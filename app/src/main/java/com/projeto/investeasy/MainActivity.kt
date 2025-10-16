@@ -21,26 +21,21 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // recuperando os Id dos EditText
         val edtaporte = findViewById<EditText>(R.id.edtText_Aporte)
         val edtNumMeses= findViewById<EditText>(R.id.edtText_NumMeses)
         val edtJuros = findViewById<EditText>(R.id.edtText_Juros)
 
-        // recuperando os botões pelos ID que é o calcular e limpar
         val btnCalcular = findViewById<Button>(R.id.btnCalcular)
         val btnLimpar = findViewById<Button>(R.id.btnLimpar)
 
-        //recuperando os TextView pra aparecer o resultado na tela
         val tvInvestimento = findViewById<TextView>(R.id.tv_ValorFinal)
         val tvResult_Rendimento = findViewById<TextView>(R.id.tv_ValorRendimento)
 
-        // colocando click no botão quando o usuario digitar irar apagar os editext
         btnLimpar.setOnClickListener {
              edtaporte.text.clear()
              edtNumMeses.text.clear()
              edtJuros.text.clear()
 
-            //adicionando os textview pra limpar
             tvInvestimento.text = ""
             tvResult_Rendimento.text = ""
         }
