@@ -13,4 +13,5 @@ um app nativo em Kotlin para calcular o rendimento de investimentos com base em 
 - TextView
 - EditText
 - Button
+- SnackBar
 
