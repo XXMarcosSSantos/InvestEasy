@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.snackbar.Snackbar
 import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
@@ -42,19 +43,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCalcular.setOnClickListener {
-            val aporte = edtaporte.text.toString().toInt()
-            val NumMeses = edtNumMeses.text.toString().toInt()
-            val juros = edtJuros.text.toString().toDouble()
 
-            val jurosMensal = juros / 100
+            val aporte = edtaporte.text.toString()
+            val NumMeses = edtNumMeses.text.toString()
+            val juros = edtJuros.text.toString()
 
-            val ResultadoFinal = aporte * ((1 + jurosMensal).pow( NumMeses) - 1) / jurosMensal
-            val totalInvestido = aporte * NumMeses
-            val VR_Rendimeto = ResultadoFinal - totalInvestido
+            if (aporte.isEmpty() || NumMeses.isEmpty() || juros.isEmpty()) {
+                Snackbar.make(
+                    it,
+                    "preencha os campos vazios",
+                    Snackbar.LENGTH_LONG
+                ).show()
+            } else {
 
-            tvInvestimento.text = ResultadoFinal.toString()
-            tvResult_Rendimento.text = VR_Rendimeto.toString()
+                val jurosMensal = juros.toFloat() / 100
+
+                val ResultadoFinal = aporte.toInt() * ((1 + jurosMensal).pow(NumMeses.toFloat()) - 1) / jurosMensal
+                val totalInvestido = aporte.toInt() * NumMeses.toInt()
+                val VR_Rendimeto = ResultadoFinal - totalInvestido
+
+                tvInvestimento.text = ResultadoFinal.toString()
+                tvResult_Rendimento.text = VR_Rendimeto.toString()
+            }
         }
-
     }
 }
